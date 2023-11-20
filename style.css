@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    height: fit-content;
+    text-align: center;
+    background-color:#f2f7c5;
+}
+
+.videos {
+    margin-bottom: 1vw;
+}
+
+.audio {
+    margin-bottom: 1.33vw;
+}
+
+article {
+    margin-top: 3vw;
+    margin-bottom: 1.5vw;
+    font-size: 32px;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(255, 231, 152);
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.links a {
+    margin-left: 1vw;
+}
+
+.icon {
+    background: url(sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+}
+
+#soundcloud { 
+    background-position: -587px -72px ;
+}
+
+#fb {
+    background-position: -439px -146px ;
+}
+
+#yt {
+    background-position: -439px -221px ;
+}
+
+#gmail {
+    background-position: -365px -221px ;
+}
+
+@media screen and (max-width: 600px) {
+nav {
+    position: relative;
+    background-color:rgb(29, 89, 219);
+}
+
+.pagetitles {
+    background-color: rgb(113, 108, 250);
+    padding: 1vw;
+    color: black;
+
+}
+
+.links {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(163, 214, 223);
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0, 2);
+    min-width: 100vw;
+}
+
+.links a {
+    color: black;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    display: block;
+}
+
+.videos {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.links a:hover{background-color: blue;}
+nav:hover .links{display: block;}
+nav:hover .pagetitles{background-color: #ebff35;}
+
+}
